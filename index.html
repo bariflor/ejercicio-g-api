@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Api	</title>
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+</head>
+<body>
+	<div class="row">
+		<div class="col s4 m4">
+			<input type="text" id="punto-partida" placeholder="Ingresa tu punto de partida" name="">
+		</div>
+		<div class="col s4 m4">
+			<input type="text" id="punto-destino" placeholder="Ingresa tu Destino" name="">
+		</div>
+		<div class="col s4 m4 center">
+				<button id="trazar-ruta" class="waves-effect waves-light btn ">Trazar ruta</button>
+				<a id="encuentrame" onclick="buscar()" class="waves-effect waves-light btn ">Encuentrame</a>
+		</div>
+	</div>
+	<div id="map" class="container"></div>
+	<footer class="page-footer center">
+		<h5>LABORATORIA</h5>
+	</footer>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA1gIvmc3zm9XwMvILfWgoSlv5clluRiS4&callback=initMap&libraries=places"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
